@@ -74,7 +74,9 @@ export class TmacRefresherComponent implements OnInit,AfterViewInit,OnDestroy {
       });
 
     this.touchMoveSubscribe = fromEvent(this.appBodyComponent.scrollElement,'touchmove')
-      .pipe(map($event =>($event as any).targetTouches[0]))
+      .pipe(
+        map($event =>($event as any).targetTouches[0]),
+      )
       .subscribe((touch)=>{
           if(this.enable && this.canStartMove() && this.prevY){
             this.translatedY += (touch.pageY  - this.prevY)*this.pullSpeed;

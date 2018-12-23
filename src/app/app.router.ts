@@ -7,4 +7,5 @@ export const ROUTER_CONFIG: Routes = [
   {path: 'index', component:IndexComponent},
   {path: 'listview', component:ListviewDemoComponent},
   {path: 'refresher', loadChildren: './demo/refresher/refresher.module#RefresherModule'},
+  {path: 'button', loadChildren: './demo/button/button.module#ButtonModule'},
 ];

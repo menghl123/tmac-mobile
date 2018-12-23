@@ -25,6 +25,7 @@ import { TmacIndicatorComponent } from './component/tmac-indicator/tmac-indicato
 import {TmacSideMenuToggleDirective} from './directive/side-menu-toggle/tmac-side-menu-toggle.directive';
 import { TmacCardComponent } from './component/tmac-card/tmac-card.component';
 import { TmacRouterDirective } from './directive/tmac-router/tmac-router.directive';
+import { TmacRippleEffectComponent } from './component/tmac-ripple-effect/tmac-ripple-effect.component';
 
 @NgModule({
   declarations: [
@@ -48,7 +49,8 @@ import { TmacRouterDirective } from './directive/tmac-router/tmac-router.directi
     TmacIndicatorComponent,
     TmacSideMenuToggleDirective,
     TmacCardComponent,
-    TmacRouterDirective
+    TmacRouterDirective,
+    TmacRippleEffectComponent
   ],
   imports: [
     CommonModule
@@ -74,7 +76,9 @@ import { TmacRouterDirective } from './directive/tmac-router/tmac-router.directi
     TmacIndicatorComponent,
     TmacSideMenuToggleDirective,
     TmacCardComponent,
-    TmacRouterDirective
+    TmacRouterDirective,
+    TmacButtonComponent,
+    TmacRippleEffectComponent
   ],
   entryComponents:[TmacActionSheetsComponent]
 })

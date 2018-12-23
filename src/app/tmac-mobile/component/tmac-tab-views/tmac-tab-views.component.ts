@@ -105,7 +105,7 @@ export class TmacTabViewsComponent implements OnInit,AfterViewInit {
     // 根据移动的x距离，判断结束时候的index
     const movedIndexX = this.movedX % this.getTabViewWidth();
     let range;
-    if(Math.abs(movedIndexX) < this.getTabViewWidth() / 3){
+    if(Math.abs(movedIndexX) < this.getTabViewWidth() / 4){
        range = - movedIndexX;
     }else {
        range = - this.getTabViewWidth() - movedIndexX;

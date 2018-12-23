@@ -1,0 +1,55 @@
+:host{
+  .tmac-ripple-container{
+    position:fixed;
+    z-index:99;
+    left:0;
+    top:0;
+    overflow:hidden;
+  }
+  .tmac-ripple{
+    background-color: rgba(255,255,255,0.4);
+    animation: ripple 2s forwards cubic-bezier(0, 0, 0.2, 1);
+    position:absolute;
+    borderRadius:500px;
+  }
+
+  @keyframes ripple {
+    0% {
+      transform: scale(0);
+      opacity: 1;
+    }
+    80% {
+      transform: scale(1);
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+}
+.tmac-ripple-container{
+  position:fixed;
+  z-index:99;
+  left:0;
+  top:0;
+  overflow:hidden;
+}
+.tmac-ripple{
+  background-color: rgba(255,255,255,0.4);
+  animation: ripple 2s forwards cubic-bezier(0, 0, 0.2, 1);
+  position:absolute;
+  border-radius:500px;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  80% {
+    transform: scale(1);
+  }
+  100% {
+    opacity: 0;
+  }
+}

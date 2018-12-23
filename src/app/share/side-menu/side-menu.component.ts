@@ -9,6 +9,7 @@ import {TmacSideMenuService} from '../../tmac-mobile/service/tmac-side-menu.serv
 })
 export class SideMenuComponent implements OnInit {
   components=[
+    {label:'按钮',url:'/button'},
     {label:'下拉刷新',url:'/refresher'}
     ];
   constructor(private router:Router,

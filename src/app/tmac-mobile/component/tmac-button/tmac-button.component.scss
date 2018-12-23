@@ -1,0 +1,61 @@
+@import "../tmac-theme/variables";
+
+:host{
+  border: 0;
+  font-family: inherit;
+  font-style: inherit;
+  font-variant: inherit;
+  line-height: 1;
+  user-select: none;
+  contain: content;
+  white-space: nowrap;
+  cursor: pointer;
+  font-kerning: none;
+  position: relative;
+  z-index: 0;
+  display: inline-block;
+  text-decoration: none;
+  transition: box-shadow .3s cubic-bezier(.4,0,.2,1),background-color .3s cubic-bezier(.4,0,.2,1),color .3s cubic-bezier(.4,0,.2,1),-webkit-box-shadow .3s cubic-bezier(.4,0,.2,1);
+  margin: 4.8px 2.4px;
+  padding: 0 15.4px;
+  border-radius: 2px;
+  overflow: hidden;
+  height: 43px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  outline:none;
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  .button-inner{
+
+  }
+
+}
+
+:host(:focus){
+  outline: 0;
+}
+:host(.tmac-button-default){
+  background-color: rgb(244, 244, 244);
+  color: $textDarkColor;
+}
+:host(.tmac-button-primary){
+  background-color: $primaryColor;
+  color: $textWhiteColor;
+}
+:host(.tmac-button-danger){
+  background-color: $dangerColor;
+  color: $textWhiteColor;
+}
+:host(.tmac-button-secondary){
+  background-color: $secondaryColor;
+  color: $textWhiteColor;
+}
+:host(.tmac-button-light){
+  background-color: $lightColor;
+  color: $textDarkColor;
+}
+:host(.tmac-button-dark){
+  background-color: $darkColor;
+  color: $textWhiteColor;
+}
