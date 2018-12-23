@@ -1,0 +1,8 @@
+<div class="tmac-tab-views-container">
+  <div (panstart)="onPanStart($event)" (panmove)="onPanMove($event)" (panend)="onPanEnd($event)"
+       #tabViewWrapper
+       [ngStyle]="{'transform':transformStyle,'transition-duration':transformDurationStyle}"
+       class="tmac-tab-view-wrapper">
+    <ng-content></ng-content>
+  </div>
+</div>

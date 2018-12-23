@@ -1,0 +1,28 @@
+@import "../common/variables";
+
+tmac-refresher-content{
+  display: block;
+  width: 100%;
+  height: 100%;
+  .tmac-refresher-content-icon{
+    position: absolute;
+    width: 60%;
+    text-align: center;
+    line-height: 60px;
+    i{
+      color: $primaryColor;
+      opacity: 0.6;
+    }
+  }
+  .tmac-reshresher-content-label{
+    height: 100%;
+    line-height: 60px;
+    display: inline-block;
+    text-align: left;
+    color: $textDarkColor;
+    opacity: 0.6;
+    font-size: 13px;
+  }
+}
+
+

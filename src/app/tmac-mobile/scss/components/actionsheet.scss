@@ -1,0 +1,64 @@
+@import "../common/variables";
+
+tmac-action-sheets{
+  .action-sheet-wrapper{
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    position: absolute;
+    z-index: 10;
+    display: block;
+    width: 100%;
+    max-width: 500px;
+    pointer-events: none;
+    .action-sheet-container{
+      display: flex;
+      display: -webkit-flex;
+      flex-flow: column;
+      justify-content: flex-end;
+      padding: 0 10px;
+      height: 100%;
+
+      .actionsheet-group{
+        border-radius: 8px;
+        background: $whiteColor;
+        overflow: scroll;
+        max-height: 60%;
+        -webkit-flex-shrink: 2;
+        -ms-flex-negative: 2;
+        flex-shrink: 2;
+        pointer-events: all;
+        margin-bottom: 6px;
+        .action-sheet-title{
+          padding: 0.4rem;
+          text-align: center;
+          border-bottom: .55px solid #d6d6da;
+          font-size: 1.2rem;
+          font-weight: 400;
+          color: $textDarkColor;
+        }
+        .action-sheet-item{
+          margin: 0;
+          padding: 0.6rem 18px;
+          border-bottom: 1px  solid $textWhiteColor ;
+          background: 0 0;
+          opacity: 0.8;
+          text-align: center;
+          position: relative;
+          .action-sheet-item-icon{
+            position: absolute;
+            font-size: 1.4rem;
+          }
+          .action-sheet-item-msg{
+
+          }
+        }
+      }
+    }
+  }
+
+
+}
+

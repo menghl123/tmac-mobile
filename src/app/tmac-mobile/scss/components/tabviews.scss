@@ -1,0 +1,37 @@
+@import "../common/variables";
+tmac-tab-views{
+  display: block;
+  width: 100%;
+  height: 100%;
+  .tmac-tab-views-container{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    .tmac-tab-view-wrapper{
+      padding: 0;
+      position: relative;
+      z-index: 1;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100%;
+      -webkit-transition-property: -webkit-transform;
+      transition-property: -webkit-transform;
+      transition-property: transform;
+      transition-property: transform,-webkit-transform;
+      -webkit-box-sizing: content-box;
+      box-sizing: content-box;
+    }
+  }
+
+}

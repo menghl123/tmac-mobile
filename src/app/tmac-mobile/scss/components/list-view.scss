@@ -1,0 +1,14 @@
+@import "../common/variables";
+
+tmac-list-view{
+  display: block;
+  .tmac-list-view-inner{
+    display: block;
+    .tmac-list-view-body{
+      position: relative;
+      background-color: inherit;
+    }
+  }
+
+}
+

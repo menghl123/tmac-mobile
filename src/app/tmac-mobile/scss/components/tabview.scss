@@ -1,0 +1,33 @@
+@import "../common/variables";
+tmac-tab-view{
+  transform: translate3d(0,0,0);
+  text-align: center;
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-shrink: 0;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+
+  .tmac-tab-view-zoom{
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+}
