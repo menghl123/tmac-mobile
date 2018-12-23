@@ -1,0 +1,45 @@
+@import "../tmac-theme/variables";
+:host {
+  display: block;
+  overflow: hidden;
+  margin: 12px;
+  border-radius: 4px;
+  width: calc(100% - 24px);
+  background: #fff;
+  -webkit-box-shadow: 0 2px 2px rgba(0,0,0,.3);
+  box-shadow: 0 1px 2px rgba(0,0,0,.3);
+  .tmac-card-header{
+    text-align: left;
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1rem;
+    font-weight: 500;
+    color: #333;
+    padding: 0 8px;
+  }
+  .tmac-card-content{
+    display: block;
+    padding: 8px;
+    font-size: 14px;
+    text-align: left;
+  }
+  .tmac-card-footer{
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #333;
+    padding: 0 8px;
+  }
+}
+
+:host(.tmac-card-md){
+
+}
+:host(.tmac-card-ios){
+}
+

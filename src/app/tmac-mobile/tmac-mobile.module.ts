@@ -22,6 +22,9 @@ import { TmacListViewDividerComponent } from './component/tmac-list-view-divider
 import { TmacRefresherComponent } from './component/tmac-refresher/tmac-refresher.component';
 import { TmacRefresherContentComponent } from './component/tmac-refresher-content/tmac-refresher-content.component';
 import { TmacIndicatorComponent } from './component/tmac-indicator/tmac-indicator.component';
+import {TmacSideMenuToggleDirective} from './directive/side-menu-toggle/tmac-side-menu-toggle.directive';
+import { TmacCardComponent } from './component/tmac-card/tmac-card.component';
+import { TmacRouterDirective } from './directive/tmac-router/tmac-router.directive';
 
 @NgModule({
   declarations: [
@@ -42,12 +45,15 @@ import { TmacIndicatorComponent } from './component/tmac-indicator/tmac-indicato
     TmacListViewDividerComponent,
     TmacRefresherComponent,
     TmacRefresherContentComponent,
-    TmacIndicatorComponent
+    TmacIndicatorComponent,
+    TmacSideMenuToggleDirective,
+    TmacCardComponent,
+    TmacRouterDirective
   ],
   imports: [
     CommonModule
   ],
-  providers:[TmaCssService],
+  providers:[],
   exports:[
     TmacAppBarComponent,
     TmacAppBodyComponent,
@@ -65,7 +71,10 @@ import { TmacIndicatorComponent } from './component/tmac-indicator/tmac-indicato
     TmacListViewDividerComponent,
     TmacRefresherComponent,
     TmacRefresherContentComponent,
-    TmacIndicatorComponent
+    TmacIndicatorComponent,
+    TmacSideMenuToggleDirective,
+    TmacCardComponent,
+    TmacRouterDirective
   ],
   entryComponents:[TmacActionSheetsComponent]
 })

@@ -1,0 +1,55 @@
+@import "../tmac-theme/variables";
+
+:host{
+  .tmac-list-view-item{
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    padding-left: 0.4rem;
+    min-height: 44px;
+    background-color: #fff;
+    vertical-align: middle;
+    overflow: hidden;
+    transition: background-color .2s;
+    -webkit-align-items: center;
+    align-items: center;
+    .tmac-list-view-item-leading{
+      margin-right: 0.8rem;
+    }
+    .tmac-list-view-item-ending{
+      display: block;
+      width: 16px;
+      height: 16px;
+      margin-right: 8px;
+      margin-left: 8px;
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: 50% 50%;
+      opacity: 0.8;
+    }
+    .tmac-list-view-item-body{
+      align-items: center;
+      position: relative;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-flex: 1;
+      flex: 1;
+      -webkit-align-self: stretch;
+      align-self: stretch;
+      overflow: hidden;
+      padding: 12.5px 15px 12.5px 0;
+      font-size: 14px;
+      opacity: 0.8;
+    }
+  }
+}
+:host([has-border]){
+  .tmac-list-view-item{
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+:host(.tmac-list-view-item-ios) {
+}
+
+:host(.tmac-list-view-item-md) {
+}

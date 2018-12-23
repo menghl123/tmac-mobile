@@ -49,22 +49,18 @@ export class TmacSideMenuComponent implements OnInit,OnDestroy {
   }
 
   onPanStart($event){
-    $event.preventDefault();
     this.prevX =$event.center.x;
 
     this.startEvent = $event;
   }
 
   onPanMove($event){
-    $event.preventDefault();
-
     const range = $event.center.x - this.prevX;
     this.changeTransformStyle(range);
     this.prevX = $event.center.x;
   }
 
   onPanEnd($event){
-    $event.preventDefault();
     this.prevX = null;
 
     // 如果是快速移动，则直接滑动

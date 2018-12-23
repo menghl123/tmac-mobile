@@ -1,17 +1,20 @@
-import {AfterContentInit, Component, ElementRef, EventEmitter, OnInit, Output, Renderer2, ViewChild} from '@angular/core';
+import {AfterContentInit, Component, ElementRef, EventEmitter, Input, OnDestroy, OnInit, Output, Renderer2, ViewChild} from '@angular/core';
+import {slideLeftRight} from '../../animation/slide.animation';
 
 @Component({
   selector: 'tmac-appbody',
   templateUrl: './tmac-app-body.component.html',
-  styleUrls: ['./tmac-app-body.component.scss']
+  styleUrls: ['./tmac-app-body.component.scss'],
+  animations:[slideLeftRight]
 })
-export class TmacAppBodyComponent implements OnInit,AfterContentInit {
+export class TmacAppBodyComponent implements OnInit,AfterContentInit,OnDestroy  {
   _top;
   _bottom;
 
   @ViewChild('scrollContent')
   public _scrollContent: ElementRef;
-
+  @Input()
+  state='normal';
   // 内容正在滑动
   @Output()
   public scrolling: EventEmitter<any> = new EventEmitter();
@@ -52,6 +55,10 @@ export class TmacAppBodyComponent implements OnInit,AfterContentInit {
 
   public get scrollElement(){
     return this._scrollContent.nativeElement;
+  }
+
+  ngOnDestroy(): void {
+    this.state = 'right'
   }
 
 }

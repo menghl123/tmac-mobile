@@ -1,0 +1,35 @@
+@import "../tmac-theme/variables";
+
+:host{
+  contain: none;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  .tabbar{
+    position: relative;
+    opacity: 1;
+    justify-content: center;
+    -webkit-box-pack: center;
+    left: 0;
+    bottom: 0;
+    display: flex;
+    width: 100%;
+    z-index: 10;
+  }
+}
+:host(.tmac-tabbar-ios){
+  .line{
+    color: inherit;
+    background-color: rgba(0, 0, 0, 0.1);
+    border: none;
+    height:2px;
+  }
+}
+:host(.tmac-tabbar-md){
+  .line{
+    color: inherit;
+    background-color: $whiteColor;
+    border: none;
+    height:2px;
+  }
+}

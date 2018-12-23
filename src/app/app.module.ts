@@ -8,6 +8,8 @@ import {ShareModule} from './share/share.module';
 import {RouterModule} from '@angular/router';
 import {ROUTER_CONFIG} from './app.router';
 import { ListviewDemoComponent } from './test/listview-demo/listview-demo.component';
+import {HashLocationStrategy, LocationStrategy} from '@angular/common';
+import {NormalModule} from './normal/normal.module';
 
 @NgModule({
   declarations: [
@@ -20,8 +22,11 @@ import { ListviewDemoComponent } from './test/listview-demo/listview-demo.compon
     ShareModule,
     CoreModule,
     RouterModule.forRoot(ROUTER_CONFIG),
+    NormalModule
   ],
-  providers: [],
+  providers: [
+    {provide: LocationStrategy, useClass: HashLocationStrategy},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,57 @@
+<tmac-app>
+  <tmac-appbar title-center>
+    <ng-container start>
+      <i tmacSideMenuToggle class="fa fa-bars"></i>
+    </ng-container>
+    <ng-container title>
+      Tmac Mobile
+    </ng-container>
+    <ng-container bottom>
+    <tmac-tabbar [tmacTabViews]="tabViews">
+      <tmac-tab (click)="tabViews.changeViewByIndex(0)">
+        框架介绍
+      </tmac-tab>
+      <tmac-tab (click)="tabViews.changeViewByIndex(1)">
+        发布日志
+      </tmac-tab >
+      <tmac-tab (click)="tabViews.changeViewByIndex(2)">
+        作者简介
+      </tmac-tab>
+    </tmac-tabbar>
+    </ng-container>
+  </tmac-appbar>
+
+
+  <tmac-appbody>
+  <tmac-tab-views  #tabViews [activeIndex]="0" (onIndexChange)="onViewChange($event)">
+  <tmac-tab-view >
+
+
+    <tmac-card>
+      <ul>
+        <li>Angular7 移动端UI框架</li>
+        <li>快速开发</li>
+        <li>企业级应用</li>
+      </ul>
+    </tmac-card>
+
+    <tmac-card>
+      <ul>
+        <li>目前只兼容Angular7，还有很多组件没有开发，待努力中。加油！</li>
+      </ul>
+
+    </tmac-card>
+  </tmac-tab-view>
+
+  <tmac-tab-view >
+  <img src="assets/images/ica-slidebox-img-2.png" alt="">
+  </tmac-tab-view>
+
+  <tmac-tab-view >
+  <img src="assets/images/ica-slidebox-img-3.png" alt="">
+  </tmac-tab-view>
+
+  </tmac-tab-views>
+
+  </tmac-appbody>
+</tmac-app>

@@ -1,7 +1,10 @@
 <tmac-app>
   <tmac-appbar >
+    <ng-container start>
+      <i tmacRouter class="fa fa-arrow-left"></i>
+    </ng-container>
     <ng-container title>
-      下拉刷新基础使用
+      下拉刷新
     </ng-container>
   </tmac-appbar>
 
@@ -10,20 +13,9 @@
     <tmac-refresher (onRefresh)="onRefresh($event)">
       <tmac-refresher-content></tmac-refresher-content>
     </tmac-refresher>
-    <div>
-    </div>
-    <tmac-list-view>
-      <tmac-list-view-item *ngFor="let i of array">
-        <ng-container leading>
-          <img style="width: 40px;padding: 4px 0" src="https://avatars0.githubusercontent.com/u/22913282?v=4&s=120" alt="">
-        </ng-container>
-        <ng-container content="">
-          <div>
-            {{i?.label}}
-            <div style="font-size: 12px;opacity: 0.6">账号:zazaaa1</div>
-          </div>
-        </ng-container>
-      </tmac-list-view-item>
-    </tmac-list-view>
+
+    <tmac-card *ngFor="let i of array">
+        <div >{{i?.label}}</div>
+    </tmac-card>
   </tmac-appbody>
 </tmac-app>
