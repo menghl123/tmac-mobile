@@ -1,5 +1,0 @@
-<tmac-backdrop *ngIf="isShow"  (click)="onDbClick()"></tmac-backdrop>
-<div #innerMenu (panstart)="onPanStart($event)" (panmove)="onPanMove($event)" (panend)="onPanEnd($event)"
-     [ngStyle]="{'transform':transformStyle,'transition-duration':transformDurationStyle}" class="tmac-menu-inner">
-  <ng-content></ng-content>
-</div>
