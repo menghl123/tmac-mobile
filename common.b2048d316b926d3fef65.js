@@ -1,1 +1,0 @@
-(window.webpackJsonp=window.webpackJsonp||[]).push([[1],{O3bz:function(t,o,n){"use strict";n.d(o,"a",function(){return i});var i=function(){function t(t,o){this.router=t,this.platformLocation=o}return t.prototype.onHostClick=function(){this.url?this.router.navigate([this.url]):this.platformLocation.back()},t}()}}]);
